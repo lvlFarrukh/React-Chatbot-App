@@ -1,7 +1,7 @@
 import React from "react";
 import "../App";
 
-const UserMessege = ({userName}) => {
+const UserMessege = ({userName, message}) => {
   return (
     <div className="msg right-msg">
       <div className="msg-img">
@@ -12,7 +12,7 @@ const UserMessege = ({userName}) => {
           <div className="msg-info-name">{userName}</div>
           <div className="msg-info-time">{`${new Date().getHours()}:${new Date().getSeconds()}`}</div>
         </div>
-        <div className="msg-text">You can change your name in JS section!</div>
+        <div className="msg-text">{message}</div>
       </div>
     </div>
   );
